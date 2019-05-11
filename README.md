@@ -13,7 +13,7 @@ Open VideoPanel.py file in any editor.
 Find pathList array declaration at the top of the file.
 Change elements of this array to whatever you want.
 
-This program was created for RSTP streams joining, so it shows final frames as fast as possible (i.e. with delay of 1ms).
+This program was created for RTSP streams joining, so it shows final frames as fast as possible (i.e. with delay of 1ms).
 Now it is obvious that joined video frame shoud be played with concerns of FPSs of the original videos.
 
 ## Contributing
