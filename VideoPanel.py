@@ -13,7 +13,7 @@ pathList = [
      "rtsp://login:password@IP:PORT/path_to_a_stream",  # this line depends on your device
      "path_to_some_video_file_1",                       # this path is either full path or relative to script path
      "path_to_some_video_file_2",
-     "path_to_some_video_file_3"]
+     "path_to_some_video_file_3",
      "path_to_some_video_file_4"]
 
 if len(pathList) == 0:
@@ -33,10 +33,6 @@ for path in pathList:
 
 if len(caps) == 0:
     sys.exit()
-
-#cap = cv.VideoCapture('rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/102')
-#cv.namedWindow('frame', 0)
-#cv.resizeWindow('frame', 480, 350)
 
 # checking number of the video sources for panel splitting
 panelSize = math.ceil(math.sqrt(len(caps)))    # panel is a square, so this constant is a panel side
