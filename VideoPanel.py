@@ -1,5 +1,6 @@
 import sys
 import math
+
 import numpy as np
 import cv2 as cv
 
@@ -9,22 +10,11 @@ WINDOW_NAME = "VideoPanel"
 
 # defining our paths
 pathList = [
-     "rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/102",
-     "rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/202",
-     "rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/302",
-     "rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/402"]
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/502",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/602",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/802",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/902",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/1002",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/1102",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/1202",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/1302",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/1402",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/1502",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/1602",
-     #"rtsp://admin:admin123456@109.248.191.112:59902/Streaming/Channels/1702"]
+     "rtsp://login:password@IP:PORT/path_to_a_stream",  # this line depends on your device
+     "path_to_some_video_file_1",                       # this path is either full path or relative to script path
+     "path_to_some_video_file_2",
+     "path_to_some_video_file_3"]
+     "path_to_some_video_file_4"]
 
 if len(pathList) == 0:
     sys.exit()
